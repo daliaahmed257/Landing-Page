@@ -116,19 +116,18 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     padding-top: 60px;
+    color: white;
 }
 
 .hero-section .left h1 {
     font-family: "Raleway", sans-serif;
     font-weight: 900;
-    color: white;
     line-height: 125%;
     font-size: 50px;
     margin-bottom: 0;
 }
 
 .hero-section .left p {
-    color: white;
     line-height: 200%;
     font-size: 16px;
     margin-bottom: 30px;
@@ -153,6 +152,7 @@ nav ul li a {
 .achievement-card {
     position: absolute;
     min-width: 200px;
+    color: var(--dark-blue-color);
 }
 
 .achievement-card .content {
@@ -174,21 +174,24 @@ nav ul li a {
 }
 
 .achievement-card h3 {
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 125%;
-    color: var(--dark-blue-color);
     margin: 0;
     text-align: center;
     width: 100%;
+    flex: 1;
+}
+
+.achievement-card img {
+    flex: 1;
+    height: 42px;
+    margin-left: -24px;
 }
 
 .achievement-card p {
-    font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-size: 16px;
-    color: var(--dark-blue-color);
     margin-top: -8px;
     margin-bottom: 8px;
     text-align: center;
@@ -233,7 +236,6 @@ h2.light {
 }
 
 section p {
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -438,7 +440,6 @@ section p {
 }
 
 .app-section .app-btn span {
-    font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-size: 20px;
     line-height: 200%;
@@ -499,7 +500,7 @@ footer form input {
     line-height: 200%;
     color: black;
     border-radius: 8px;
-    padding: 8px 32px;
+    padding: 8px 160px 8px 32px;
     border: none;
     width: 100%;
 }
@@ -651,6 +652,15 @@ nav.mobile-nav, .mobile-menu-container {
         margin-bottom: 20px;
     }
 
+    .coures-section .course-card .duration p {
+        width: 100%;
+    }
+
+    .coures-section .course-card .duration img {
+        width: 20px;
+        height: 20px;
+    }
+
     .coures-section .course-cards {
         flex-direction: column;
         gap: 80px;
@@ -753,5 +763,121 @@ nav.mobile-nav, .mobile-menu-container {
         color: white;
         text-decoration: none;
         font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+
+
+    .wrapper {
+        padding: 0 32px;
+    }
+
+    .hero-section .left p {
+        width: 100%;
+    }
+
+    .app-section .app-buttons {
+        flex-direction: column;
+    }
+
+    nav.mobile-nav {
+        padding: 32px;
+    }
+
+    nav.mobile-nav.scrolled {
+        padding: 8px 32px;
+    }
+
+    .mobile-menu-container .close-icon {
+        right: 32px;
+    }
+
+    .hero-section .left h1 {
+        font-size: 36px;
+    }
+
+    .hero-section .right img {
+        height: 400px;
+        transform: translateX(50px);
+    }
+
+    .hero-section .right {
+        overflow: hidden;
+        transform: translateX(30px);
+    }
+
+    .achievement-card h3 {
+        font-size: 30px;
+    }
+
+    .hero-section .achievement-card {
+        margin-bottom: 48px;
+    }
+
+    .hero-section .achievement-cards {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .testimonials-section .testimonial-card .info h4 {
+        font-size: 18px;
+    }
+
+    .testimonials-section .testimonial-card .info p {
+        font-size: 14px;
+    }
+
+    .testimonials-section .testimonial-card img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .coures-section .course-card:first-child .info h3 {
+        width: 50%;
+    }
+
+    .coures-section .wrapper {
+        padding: 0;
+    }
+
+    .coures-section .course-card img {
+        height: 240px;
+    }
+
+    .coures-section .wrapper .btn {
+        right: 32px;
+    }
+
+    footer .links-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    footer form input {
+        padding: 8px 32px;
+    }
+
+    footer .links-container .links:last-child {
+        grid-column: 1 / 2;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer form .submit-btn {
+        top: 130%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    footer .copyright {
+        margin-top: 100px;
+        text-align: center;
     }
 }
